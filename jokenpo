@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+  int escolhaJogador, escolhaComputador;
+  srand(time(0));
+
+
+  printf("========== Jogo JOKEMPO ==========\n");
+  printf("Escolha uma opcao:\n");
+  printf("1. Pedra\n");
+  printf("2. Papel\n");
+  printf("3. Tesoura\n");
+  printf("Escolha:\n");
+  scanf("%d", &escolhaJogador);
+
+   escolhaComputador = rand() % 3 + 1;
+
+
+
+   switch (escolhaJogador)
+   {
+   case 1:
+    printf("Jogador: Pedra - ");
+    break;
+    case 2:
+    printf("Jogador: Papel - ");
+    break;
+    case 3:
+    printf("Jogador: Tesoura - ");
+    break;
+    default:
+    printf("Opcao Invalida");
+    break;
+
+   }
+
+      switch (escolhaComputador)
+   {
+   case 1:
+    printf("Computador: Pedra\n");
+    break;
+    case 2:
+    printf("Computador: Papel\n");
+    break;
+    case 3:
+    printf("Computador: Tesoura\n");
+    break;
+   }
+
+   if (escolhaComputador = escolhaJogador)
+   {
+    printf("Empate\n");
+   } else if (( escolhaJogador == 1) && (escolhaComputador == 3) ||
+              ( escolhaJogador == 2) && (escolhaComputador == 1) ||
+              ( escolhaJogador == 3) && (escolhaComputador == 2)); 
+  {
+              printf("Jogador  Venceu");
+   } else {
+     printf("Voce Perdeu");
+   }
+   
+
+
+   return 0;
+
+}
+   
+
+
+
+
+
+
+
+
+
+  /*switch (opcao) {
+    case 1:
+      srand(time(0));
+      numeroSecreto = rand() % 10 + 1;
+      printf("Adivinhe o número (entre 1 e 10): \n");
+      scanf("%d", &palpite);
+
+      if (palpite == numeroSecreto) {
+        printf("Parabéns! Você acertou!\n");
+      } else {
+        printf("Você errou. O número era %d.\n", numeroSecreto);
+      }
+      break;
+    case 2:
+      printf("Regras do Jogo:\n");
+      printf("1. Escolha uma opção no menu.\n");
+      printf("2. Se você escolher 'Iniciar Jogo', adivinhe o número secreto.\n");
+      printf("3. O jogo termina quando você escolhe 'Sair'.\n");
+      break;
+    case 3:
+      printf("Saindo...\n");
+      break;
+    default:
+      printf("Opção inválida. Tente novamente.\n");
+  }
+
+  return 0;
+}
+  */
+
+  
